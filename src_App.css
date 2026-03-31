@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+  color: #2d3436;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1a1f3a 100%);
+  color: #e8e8ff;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
